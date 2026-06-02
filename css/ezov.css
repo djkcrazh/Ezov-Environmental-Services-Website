@@ -865,19 +865,22 @@ p { margin: 0 0 1rem; }
 }
 
 .origins-logo-wrap {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 2;
-  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2.5rem;
 }
 
 .origins-logo-wrap img {
-  max-width: 340px;
   width: 100%;
-  border-radius: var(--radius-md);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.30);
+  height: 100%;
+  object-fit: contain;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 
