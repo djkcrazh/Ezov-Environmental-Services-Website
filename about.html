@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About EZOV — Recovering Value, Reducing Waste</title>
+  <meta name="description" content="Learn the story behind EZOV Environmental Services — Ghana's dedicated plastic recycling enterprise empowering communities, women, and youth through sustainable waste recovery.">
+  <link rel="icon" href="images/icon.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/ezov.css">
+</head>
+
+<body data-page="about">
+
+  <!-- ============================================================
+       NAVIGATION (solid on all non-home pages)
+       ============================================================ -->
+  <nav class="nav-bar is-solid" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container-custom">
+      <div class="nav-inner">
+
+        <a href="index.html" class="nav-logo" aria-label="EZOV home">
+          <!-- On about page nav is always solid, so always show dark logo -->
+          <img src="images/logo-white.png" alt="EZOV Environmental Services" class="logo-light" style="display:none;">
+          <img src="images/logo-black.png" alt="EZOV Environmental Services" class="logo-dark" style="display:block;">
+        </a>
+
+        <ul class="nav-links nav-links-desktop" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="#origins">Our Story</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-nav">Schedule Pickup</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <button id="drawer-close" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;color:#172517;" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img src="images/logo-black.png" alt="EZOV" style="height:36px;margin-bottom:2.5rem;">
+    <ul class="mobile-drawer-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About EZOV</a></li>
+      <li><a href="#origins">Our Story</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary" style="margin-top:1rem;">Schedule Pickup</a>
+  </div>
+
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <header class="page-hero" role="banner">
+    <div class="container-custom" style="position:relative;z-index:2;">
+      <nav class="breadcrumb-trail" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <span aria-current="page">About EZOV</span>
+      </nav>
+      <h1 class="reveal">About EZOV</h1>
+      <p class="reveal reveal-delay-1">Smart plastic waste solutions for a cleaner, more sustainable Ghana — and a story built on community, purpose, and recovery.</p>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       COMPANY OVERVIEW
+       ============================================================ -->
+  <section class="section bg-white" id="about" aria-labelledby="about-title">
+    <div class="container-custom">
+      <div class="two-col-grid">
+
+        <!-- Image with badge -->
+        <div class="about-image-wrap reveal">
+          <img src="images/misc/3.png" alt="EZOV Environmental Services — our facility and operations" loading="lazy">
+          <div class="about-badge">
+            <div class="about-badge-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="about-badge-text">
+              <strong>28,950+</strong>
+              <span>kg recycled this year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <span class="overline reveal">Who We Are</span>
+          <h2 class="section-title reveal reveal-delay-1" id="about-title">
+            Waste Solutions for a Brighter Tomorrow
+          </h2>
+          <div class="divider reveal reveal-delay-1"></div>
+
+          <p class="body-text reveal reveal-delay-2">
+            At EZOV Environmental Services, we believe sustainability begins with responsible action. Founded with a mission to reduce plastic pollution and transform how Ghanaian communities handle waste, we are dedicated to turning discarded materials into valuable resources.
+          </p>
+          <p class="body-text reveal reveal-delay-2">
+            Our operations focus on the safe and sustainable recovery, sorting, and processing of post-consumer and industrial plastics. Using modern recycling methods and adhering to the highest environmental standards, we convert plastic waste into high-quality raw materials that support manufacturing industries and help conserve natural resources.
+          </p>
+          <p class="body-text reveal reveal-delay-3">
+            But our work doesn't stop at recycling. We raise awareness about responsible waste management through education, community engagement, and collaboration with businesses, local governments, and organisations. Our goal is simple: reduce plastic pollution, protect the environment, and contribute to a circular economy where materials are reused — not wasted.
+          </p>
+
+          <a href="#contact" class="btn btn-primary reveal reveal-delay-4" style="margin-top:0.5rem;">Join Us Today</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW IT ALL STARTED
+       ============================================================ -->
+  <section class="section bg-sage" id="origins" aria-labelledby="origins-title">
+    <div class="container-custom">
+      <div class="two-col-grid">
+
+        <!-- Text / Timeline -->
+        <div>
+          <span class="overline reveal">The Beginning</span>
+          <h2 class="section-title reveal reveal-delay-1" id="origins-title">
+            How It All Started
+          </h2>
+          <div class="divider reveal reveal-delay-1"></div>
+
+          <p class="body-text reveal reveal-delay-2" style="margin-bottom:2.5rem;">
+            EZOV was born out of a shared determination to address one of Ghana's most pressing environmental challenges — the unchecked accumulation of plastic waste in communities across the country.
+          </p>
+
+          <div class="timeline reveal reveal-delay-3">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-label">The Vision</span>
+              <h4>A Gap Worth Closing</h4>
+              <p>Co-founders Ludwig Adjakloe and Robert Adjakloe identified a critical gap: vast quantities of recoverable plastic were being lost to landfills and waterways, while communities lacked organised systems for collection and recycling. They saw this not as a problem, but as an opportunity to create value and employment.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-label">The Foundation</span>
+              <h4>Building from the Ground Up</h4>
+              <p>Starting from the defunct State Farms Premises on the Pokuase-Mayera Road, the team built relationships with informal waste collectors — predominantly women and youth — creating a structured network where previously scattered collection efforts could be coordinated and rewarded.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-label">The Growth</span>
+              <h4>From Small Operation to Recognised Enterprise</h4>
+              <p>What began as a modest recycling initiative has grown into an enterprise with over 25 collection points, more than 100 informal collector partners, and direct supply relationships with manufacturers across Ghana. Every step of growth has remained anchored to the founding principle: that plastic waste holds real, recoverable value.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-label">Today</span>
+              <h4>Impact at Scale</h4>
+              <p>EZOV now collects and processes over 28,950 kilograms of plastic annually, supplying recycled HDPE, PP, PET, and LDPE to manufacturers while continuing to expand its community collection network — proving that sustainability and economic opportunity can grow hand in hand.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:1.5rem;">
+          <div class="about-image-wrap" style="flex:1;">
+            <img src="images/misc/1.png" alt="EZOV team and community partners" loading="lazy" style="min-height:300px;">
+          </div>
+          <div class="about-image-wrap" style="flex:1;">
+            <img src="images/background/10.png" alt="EZOV recycling facility" loading="lazy" style="min-height:220px;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PLASTICS WE RECYCLE
+       ============================================================ -->
+  <section class="section bg-white" id="materials" aria-labelledby="materials-title">
+    <div class="container-custom">
+
+      <div style="max-width:620px;margin:0 auto 3.5rem;text-align:center;">
+        <span class="overline reveal">What We Recycle</span>
+        <h2 class="section-title reveal reveal-delay-1" id="materials-title">
+          Plastics We Collect &amp; Process
+        </h2>
+        <p class="lead-text reveal reveal-delay-2" style="margin-top:0.75rem;">
+          EZOV promotes sustainable development by recovering a wide range of plastic types and creating employment for women and youth in the process.
+        </p>
+      </div>
+
+      <div class="materials-grid">
+
+        <article class="material-card reveal">
+          <div class="material-tag">HDPE</div>
+          <h4>High-Density Polyethylene</h4>
+          <p>Milk jugs, detergent bottles, shampoo containers, and industrial drums. HDPE is one of the most commonly recycled and highest-value plastics.</p>
+        </article>
+
+        <article class="material-card reveal reveal-delay-1">
+          <div class="material-tag">PP</div>
+          <h4>Polypropylene</h4>
+          <p>Food containers, bottle caps, drinking straws, and automotive parts. PP has a high melting point, making it ideal for reprocessing into durable goods.</p>
+        </article>
+
+        <article class="material-card reveal reveal-delay-2">
+          <div class="material-tag">PET</div>
+          <h4>Polyethylene Terephthalate</h4>
+          <p>Water and beverage bottles, food packaging, and polyester fibres. PET is highly recyclable and in strong demand from manufacturers across Ghana.</p>
+        </article>
+
+        <article class="material-card reveal reveal-delay-3">
+          <div class="material-tag">LDPE</div>
+          <h4>Low-Density Polyethylene</h4>
+          <p>Plastic bags, cling film, squeezable bottles, and flexible packaging. LDPE can be recycled into new plastic bags and bin liners.</p>
+        </article>
+
+        <article class="material-card reveal reveal-delay-4">
+          <div class="material-tag">Crates</div>
+          <h4>Plastic Crates</h4>
+          <p>Industrial and agricultural crates used for storage and transport. Recovered crates are shredded and repurposed into recycled plastic granules.</p>
+        </article>
+
+        <article class="material-card reveal reveal-delay-5">
+          <div class="material-tag">Chairs</div>
+          <h4>Plastic Chairs &amp; Furniture</h4>
+          <p>Domestic and commercial plastic chairs and furniture. These bulkier plastic items are processed and converted into reusable raw material for manufacturers.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       VISION & MISSION
+       ============================================================ -->
+  <section class="section bg-sand" id="vision-mission" aria-labelledby="vision-title">
+    <div class="container-custom">
+
+      <div style="max-width:520px;margin:0 auto 3.5rem;text-align:center;">
+        <span class="overline reveal">Our Direction</span>
+        <h2 class="section-title reveal reveal-delay-1" id="vision-title">
+          Vision &amp; Mission
+        </h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;" class="vision-mission-grid">
+
+        <!-- Vision -->
+        <div class="vision-card reveal">
+          <h3>Our Vision</h3>
+          <p>
+            To be a leading waste management service provider committed to protecting the environment and enhancing the quality of life for future generations. We strive to create a cleaner, healthier, and more sustainable world by implementing innovative waste management solutions that minimise environmental impact.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="mission-card reveal reveal-delay-2">
+          <h3>Our Mission</h3>
+          <ul class="check-list" aria-label="Mission points">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Deliver efficient, eco-friendly plastic waste collection and recycling services.
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Promote sustainability through waste reduction, reuse, and recycling initiatives.
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Ensure compliance with environmental regulations and best industry practices.
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Educate communities on responsible waste management and environmental stewardship.
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Utilise technology to enhance waste management efficiency and sustainability.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @media (max-width: 767px) {
+      .vision-mission-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+
+  <!-- ============================================================
+       WHY CHOOSE US
+       ============================================================ -->
+  <section class="section bg-white" id="why-us" aria-labelledby="why-title">
+    <div class="container-custom">
+
+      <div style="max-width:560px;margin:0 auto 3.5rem;text-align:center;">
+        <span class="overline reveal">Why EZOV</span>
+        <h2 class="section-title reveal reveal-delay-1" id="why-title">Why Partner With Us?</h2>
+        <p class="lead-text reveal reveal-delay-2" style="margin-top:0.75rem;">
+          We combine reliability, transparency, and genuine environmental commitment in everything we do.
+        </p>
+      </div>
+
+      <div class="three-col-grid">
+
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Careful Material Handling</h4>
+          <p>Every material we receive is handled with care through each stage — from collection to packaging — to prevent contamination and preserve quality for our manufacturer clients.</p>
+        </article>
+
+        <article class="why-card reveal reveal-delay-1">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h4>Flexible, Reliable Scheduling</h4>
+          <p>Our scheduling is built around your needs. We ensure transparent timelines with no unnecessary delays — so your business or household always knows when to expect a collection.</p>
+        </article>
+
+        <article class="why-card reveal reveal-delay-2">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Transparent, Flexible Pricing</h4>
+          <p>Our pricing and negotiations remain open and flexible. We work collaboratively with partners and clients to arrive at agreements that are fair and sustainable for everyone involved.</p>
+        </article>
+
+        <article class="why-card reveal reveal-delay-3">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4>Community Impact</h4>
+          <p>Every kilogram we collect supports livelihoods. Our network of over 100 informal collectors — particularly women and youth — earn income through their partnership with EZOV.</p>
+        </article>
+
+        <article class="why-card reveal reveal-delay-4">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Verified Impact Tracking</h4>
+          <p>We weigh and track every batch of plastic processed. Our clients and partners receive transparent data on volumes collected, sorted, and recycled — no guesswork.</p>
+        </article>
+
+        <article class="why-card reveal reveal-delay-5">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Experienced, Dedicated Team</h4>
+          <p>Led by a team with deep experience in waste management operations and a genuine commitment to environmental stewardship, EZOV operates with purpose and professionalism.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       OUR TEAM
+       ============================================================ -->
+  <section class="section bg-sage" id="team" aria-labelledby="team-title">
+    <div class="container-custom">
+
+      <div style="max-width:560px;margin:0 auto 3.5rem;text-align:center;">
+        <span class="overline reveal">The People Behind EZOV</span>
+        <h2 class="section-title reveal reveal-delay-1" id="team-title">Our Team</h2>
+        <p class="lead-text reveal reveal-delay-2" style="margin-top:0.75rem;">
+          Driven by a shared belief that responsible recycling can transform communities and protect Ghana's environment.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Ludwig Adjakloe — CEO -->
+        <article class="team-card reveal">
+          <div class="team-img-wrap">
+            <img src="images/team/2.png" alt="Ludwig Adjakloe, CEO of EZOV Environmental Services" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Ludwig Adjakloe</h4>
+            <span class="team-role">Chief Executive Officer</span>
+            <p class="team-bio">Ludwig co-founded EZOV with a vision to build sustainable impact through responsible recycling. He leads the company's strategic direction, forming partnerships with manufacturers, communities, and government bodies to advance Ghana's circular economy.</p>
+          </div>
+        </article>
+
+        <!-- Robert Adjakloe — Co-Founder -->
+        <article class="team-card reveal reveal-delay-1">
+          <div class="team-img-wrap">
+            <img src="images/team/3.png" alt="Robert Adjakloe, Co-Founder of EZOV Environmental Services" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Mr. Robert Adjakloe</h4>
+            <span class="team-role">Co-Founder</span>
+            <p class="team-bio">Robert brings a deep commitment to environmental responsibility and operational excellence. As Co-Founder, he has been instrumental in building EZOV's collection network and establishing the systems that ensure consistent, contamination-free plastic processing.</p>
+          </div>
+        </article>
+
+        <!-- Reginald Samuel Agyei — Operations Manager -->
+        <article class="team-card reveal reveal-delay-2">
+          <div class="team-img-wrap">
+            <img src="images/team/1.png" alt="Reginald Samuel Agyei, Operations Manager at EZOV" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Reginald Samuel Agyei</h4>
+            <span class="team-role">Operations Manager</span>
+            <p class="team-bio">Reginald oversees EZOV's day-to-day operations — coordinating collection routes, processing schedules, and quality standards. His expertise in logistics and waste management keeps EZOV's impact consistent and growing month on month.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       JOIN US CTA BANNER
+       ============================================================ -->
+  <section class="cta-banner" aria-label="Join us call to action">
+    <div class="container-custom" style="position:relative;z-index:2;">
+      <div style="max-width:660px;margin:0 auto;text-align:center;">
+
+        <span class="pill pill-dark reveal" style="margin-bottom:1.5rem;">Be Part of the Change</span>
+
+        <h2 class="section-title text-white reveal reveal-delay-1" style="margin:0.75rem 0 1.25rem;font-size:clamp(1.9rem,4vw,3rem);">
+          Join the EZOV Movement
+        </h2>
+
+        <p class="lead-text reveal reveal-delay-2" style="color:rgba(255,255,255,0.72);margin-bottom:2.25rem;">
+          Whether you're a business looking to manage plastic waste responsibly, an investor interested in Ghana's circular economy, or someone who simply wants to make a difference — we want to hear from you.
+        </p>
+
+        <a href="#contact" class="btn btn-ghost-white reveal reveal-delay-3">Join Us Today</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section bg-white" id="contact" aria-labelledby="contact-title-about">
+    <div class="container-custom">
+
+      <div style="max-width:580px;margin:0 auto 3.5rem;text-align:center;">
+        <span class="overline reveal">Get In Touch</span>
+        <h2 class="section-title reveal reveal-delay-1" id="contact-title-about">
+          Ready to Work Together?
+        </h2>
+        <p class="lead-text reveal reveal-delay-2" style="margin-top:0.75rem;">
+          Schedule a waste pickup, explore a partnership, or ask us anything. We respond within one business day.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info + map -->
+        <div class="reveal">
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-value">Defunct State Farms Premises, Pokuase-Mayera Road, Ga North Municipal, Accra</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-info-label">Email</span>
+              <a href="mailto:info@ezovrecycling.com" class="contact-info-value" style="color:inherit;">info@ezovrecycling.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <span class="contact-info-label">Hours</span>
+              <span class="contact-info-value">Monday – Friday, 8:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <div>
+              <span class="contact-info-label">Follow Us</span>
+              <div class="contact-social" style="display:flex;gap:0.6rem;margin-top:0.5rem;">
+                <a href="https://www.instagram.com/ezov_gh/" target="_blank" rel="noopener noreferrer" aria-label="EZOV on Instagram" class="social-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100069533405256" target="_blank" rel="noopener noreferrer" aria-label="EZOV on Facebook" class="social-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrap" style="margin-top:1.5rem;">
+            <iframe
+              title="EZOV Environmental Services location"
+              src="https://maps.google.com/maps?q=5.7022649,-0.2861058&z=15&output=embed"
+              width="100%"
+              height="220"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+        <!-- Form -->
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form-card">
+
+            <!-- Shown by @formspree/ajax after successful submission -->
+            <div data-fs-success style="display:none;">
+              <div class="form-success show" role="alert">
+                <div class="success-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3>Message Received</h3>
+                <p>Thank you for reaching out. A member of the EZOV team will get back to you within one business day.</p>
+              </div>
+            </div>
+
+            <!-- Form-level error — populated by the library -->
+            <div data-fs-error style="display:none;color:#9b1c1c;background:#fde8ec;border:1px solid #f5c6cc;padding:0.875rem 1rem;border-radius:6px;font-size:0.88rem;margin-bottom:1.25rem;"></div>
+
+            <form id="contact-form-about" action="https://formspree.io/f/mvzyjygk" method="POST">
+
+              <h3 style="font-size:1.2rem;margin-bottom:0.35rem;color:var(--clr-dark);">Send Us a Message</h3>
+              <p style="font-size:0.88rem;color:var(--clr-muted);margin-bottom:1.75rem;">We typically respond within one business day.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name-about">Full Name</label>
+                  <input class="form-input" type="text" id="name-about" name="name" placeholder="Jane Asante" required autocomplete="name" data-fs-field>
+                  <span data-fs-error="name" style="color:#9b1c1c;font-size:0.78rem;display:block;margin-top:0.3rem;"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone-about">Phone Number</label>
+                  <input class="form-input" type="tel" id="phone-about" name="phone" placeholder="+233 20 000 0000" autocomplete="tel" data-fs-field>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email-about">Email Address</label>
+                <input class="form-input" type="email" id="email-about" name="email" placeholder="jane@example.com" required autocomplete="email" data-fs-field>
+                <span data-fs-error="email" style="color:#9b1c1c;font-size:0.78rem;display:block;margin-top:0.3rem;"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message-about">Message</label>
+                <textarea class="form-input" id="message-about" name="message" placeholder="Tell us how we can help — schedule a pickup, partnership inquiry, or general question." required data-fs-field></textarea>
+                <span data-fs-error="message" style="color:#9b1c1c;font-size:0.78rem;display:block;margin-top:0.3rem;"></span>
+              </div>
+
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-fs-submit-btn>
+                Send Message
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container-custom">
+      <div class="footer-grid">
+
+        <div>
+          <img src="images/logo-white.png" alt="EZOV Environmental Services" class="footer-logo">
+          <p class="footer-tagline">
+            Recovering the value in plastic waste to build a cleaner, more sustainable Ghana. Every kilogram recycled is a step toward a circular economy.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://www.instagram.com/ezov_gh/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="EZOV on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100069533405256" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="EZOV on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About EZOV</a></li>
+            <li><a href="#origins">Our Story</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul class="footer-links">
+            <li><a href="#materials">Plastic Waste Collection</a></li>
+            <li><a href="#materials">Commercial Recycling</a></li>
+            <li><a href="#materials">Post-Industrial Plastic</a></li>
+            <li><a href="#materials">Materials We Recycle</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Contact</p>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Defunct State Farms Premises, Pokuase-Mayera Road, Ga North Municipal, Accra, Ghana</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@ezovrecycling.com" style="color:inherit;">info@ezovrecycling.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Fri, 8:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year-about"></span> EZOV Environmental Services. All rights reserved.</p>
+        <p>Recovering Value, Reducing Waste — Pokuase, Ghana</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back-to-top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/ezov.js"></script>
+
+  <!-- @formspree/ajax CDN — AJAX submission, field-level errors, success state -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form-about', formId: 'mvzyjygk' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+  <script>
+    document.getElementById('year-about').textContent = new Date().getFullYear();
+    // About page: nav is always solid (never transparent)
+    const nav = document.getElementById('navbar');
+    if (nav) {
+      nav.classList.remove('is-transparent');
+      nav.classList.add('is-solid');
+    }
+  </script>
+
+</body>
+</html>
