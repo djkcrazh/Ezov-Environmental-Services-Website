@@ -831,6 +831,57 @@ p { margin: 0 0 1rem; }
 
 
 /* =============================================================
+   HOW IT ALL STARTED — BRANDED CARD
+   ============================================================= */
+.origins-brand-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.origins-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.origins-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(26, 61, 40, 0.82) 0%,
+    rgba(45, 106, 79, 0.75) 100%
+  );
+}
+
+.origins-logo-wrap {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.origins-logo-wrap img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =============================================================
    HOW IT ALL STARTED — TIMELINE
    ============================================================= */
 .timeline {
