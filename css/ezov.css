@@ -1501,3 +1501,105 @@ textarea.form-input {
   color: rgba(255,255,255,0.80);
   border-color: rgba(255,255,255,0.18);
 }
+
+
+/* =============================================================
+   MOBILE BOTTOM NAVIGATION  (phones only — max-width: 767px)
+   All changes below are scoped to this breakpoint only.
+   ============================================================= */
+
+/* Hidden by default on all screen sizes */
+.mobile-bottom-nav { display: none; }
+
+@media (max-width: 767px) {
+
+  /* Body padding so the bottom bar never hides page content */
+  body { padding-bottom: 70px; }
+
+  /* Lift back-to-top above the bottom bar */
+  .back-to-top { bottom: 5rem; }
+
+  /* Hide the hamburger and the top-nav "Schedule Pickup" button —
+     both are replaced by the bottom nav on phones */
+  .hamburger      { display: none !important; }
+  .btn-nav        { display: none !important; }
+  .mobile-drawer  { display: none !important; }
+
+  /* Nav logo text: slightly tighter on small screens */
+  .nav-logo-text {
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* ---- Bottom bar container ---- */
+  .mobile-bottom-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.10);
+    /* Respect iOS home-indicator safe area */
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* ---- Row of items ---- */
+  .mobile-bottom-nav-inner {
+    display: flex;
+    align-items: stretch;
+  }
+
+  /* ---- Individual nav item ---- */
+  .mobile-nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 0.55rem 0.15rem 0.5rem;
+    color: var(--clr-muted);
+    font-family: var(--font-heading);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-nav-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item[aria-current="page"] {
+    color: var(--clr-primary-deep);
+    border-top-color: var(--clr-primary-deep);
+  }
+
+  /* ---- Schedule Pickup CTA item ---- */
+  .mobile-nav-cta {
+    background: var(--clr-primary-deep);
+    color: white;
+    border-top-color: transparent;
+  }
+  .mobile-nav-cta:hover {
+    background: var(--clr-primary-dark);
+    color: white;
+    border-top-color: transparent;
+  }
+  .mobile-nav-cta[aria-current="page"] {
+    background: var(--clr-primary-dark);
+    border-top-color: transparent;
+    color: white;
+  }
+
+}
